@@ -40,7 +40,7 @@ socket.on("disconnect",()=>{
 app.use(express.json({limit: '4mb'}));
 app.use(cors({
     origin: process.env.NODE_ENV === 'production' 
-        ? ['https://your-frontend-url.netlify.app', 'https://your-frontend-url.vercel.app']
+        ? ['https://ankitchat.netlify.app', 'https://ankit-chat.netlify.app', 'https://ankitpal-chat.netlify.app']
         : ['http://localhost:5173', 'http://localhost:3000'],
     credentials: true
 }));
